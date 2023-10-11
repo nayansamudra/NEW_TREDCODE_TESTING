@@ -1,0 +1,5 @@
+[
+    ["1688360560.30116","dudhanechinmay@gmail.com","/img/signal/FHAQM2B9T9YGV040.png",""],
+    ["1688360534.92966","dudhanechinmay@gmail.com","/img/signal/OK12B7TLAPEHGS58.jpeg",""],
+    ["1688360487.54601","dudhanechinmay@gmail.com","","<p>hello traders chinmay here, now I am having around 4% loss in weekly fly I made.<br>here two things I will do, one roll up bought PE 100 points up and above days high I can add long debit spread.<br>If I face more than 5% overall loss today in this weekly strategy, I will exit this trade and book losses.<br>Its ok to book losses after 6 continuous profitable weeks.&nbsp;</p>"],["1688357057.43726","dudhanechinmay@gmail.com","","<p>hello traders, we are updating tredcode and you may face difficulties in access for some time, team is working on it, once all operations are functional.<br>sorry for inconvenience&nbsp;</p>"]
+]

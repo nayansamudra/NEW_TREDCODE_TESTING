@@ -1,0 +1,355 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "Symbol": "HDFCBANK",
+            "param_0": 819.46,
+            "param_1": 1647.8,
+            "param_2": 1662.25,
+            "param_3": -0.87
+        },
+        {
+            "Symbol": "CHOLAFIN",
+            "param_0": 680.2,
+            "param_1": 1115.05,
+            "param_2": 1130.45,
+            "param_3": -1.36
+        },
+        {
+            "Symbol": "RELIANCE",
+            "param_0": 651.85,
+            "param_1": 2479.7,
+            "param_2": 2513.2,
+            "param_3": -1.33
+        },
+        {
+            "Symbol": "ICICIBANK",
+            "param_0": 497.52,
+            "param_1": 983.5,
+            "param_2": 994.55,
+            "param_3": -1.11
+        },
+        {
+            "Symbol": "IBULHSGFIN",
+            "param_0": 467.79,
+            "param_1": 148.4,
+            "param_2": 141.45,
+            "param_3": 4.91
+        },
+        {
+            "Symbol": "HEROMOTOCO",
+            "param_0": 410.87,
+            "param_1": 3024.55,
+            "param_2": 3102.1,
+            "param_3": -2.5
+        },
+        {
+            "Symbol": "INFY",
+            "param_0": 369.7,
+            "param_1": 1354.75,
+            "param_2": 1365.2,
+            "param_3": -0.77
+        },
+        {
+            "Symbol": "ADANIENT",
+            "param_0": 369.2,
+            "param_1": 2481,
+            "param_2": 2481.1,
+            "param_3": -0.0
+        },
+        {
+            "Symbol": "ESCORTS",
+            "param_0": 343.37,
+            "param_1": 2675,
+            "param_2": 2563.55,
+            "param_3": 4.35
+        },
+        {
+            "Symbol": "TATAMOTORS",
+            "param_0": 326.27,
+            "param_1": 629.35,
+            "param_2": 643.65,
+            "param_3": -2.22
+        },
+        {
+            "Symbol": "TATASTEEL",
+            "param_0": 308.79,
+            "param_1": 120,
+            "param_2": 123.2,
+            "param_3": -2.6
+        },
+        {
+            "Symbol": "SBIN",
+            "param_0": 302.01,
+            "param_1": 601.8,
+            "param_2": 611.85,
+            "param_3": -1.64
+        },
+        {
+            "Symbol": "TCS",
+            "param_0": 300.64,
+            "param_1": 3435.3,
+            "param_2": 3452.05,
+            "param_3": -0.49
+        },
+        {
+            "Symbol": "AXISBANK",
+            "param_0": 290.76,
+            "param_1": 941.95,
+            "param_2": 959.9,
+            "param_3": -1.87
+        },
+        {
+            "Symbol": "PVRINOX",
+            "param_0": 281.86,
+            "param_1": 1601,
+            "param_2": 1565.45,
+            "param_3": 2.27
+        },
+        {
+            "Symbol": "COALINDIA",
+            "param_0": 278.19,
+            "param_1": 234.5,
+            "param_2": 240.35,
+            "param_3": -2.43
+        },
+        {
+            "Symbol": "TATAPOWER",
+            "param_0": 252.2,
+            "param_1": 237.2,
+            "param_2": 244.4,
+            "param_3": -2.95
+        },
+        {
+            "Symbol": "DLF",
+            "param_0": 250.74,
+            "param_1": 493.5,
+            "param_2": 499.7,
+            "param_3": -1.24
+        },
+        {
+            "Symbol": "MARUTI",
+            "param_0": 244.69,
+            "param_1": 9597.55,
+            "param_2": 9716.75,
+            "param_3": -1.23
+        },
+        {
+            "Symbol": "KOTAKBANK",
+            "param_0": 238.54,
+            "param_1": 1824.9,
+            "param_2": 1850,
+            "param_3": -1.36
+        },
+        {
+            "Symbol": "AMBUJACEM",
+            "param_0": 235.88,
+            "param_1": 450.5,
+            "param_2": 461.55,
+            "param_3": -2.39
+        },
+        {
+            "Symbol": "BAJFINANCE",
+            "param_0": 234.94,
+            "param_1": 7175.05,
+            "param_2": 7269.7,
+            "param_3": -1.3
+        },
+        {
+            "Symbol": "SRF",
+            "param_0": 230.28,
+            "param_1": 2273.35,
+            "param_2": 2251.1,
+            "param_3": 0.99
+        },
+        {
+            "Symbol": "NTPC",
+            "param_0": 224.44,
+            "param_1": 218.4,
+            "param_2": 225.15,
+            "param_3": -3.0
+        },
+        {
+            "Symbol": "POLYCAB",
+            "param_0": 224.25,
+            "param_1": 4630.4,
+            "param_2": 4630.2,
+            "param_3": 0.0
+        },
+        {
+            "Symbol": "EICHERMOT",
+            "param_0": 217.48,
+            "param_1": 3367,
+            "param_2": 3415.9,
+            "param_3": -1.43
+        },
+        {
+            "Symbol": "RECLTD",
+            "param_0": 200.77,
+            "param_1": 196.85,
+            "param_2": 200,
+            "param_3": -1.57
+        },
+        {
+            "Symbol": "ITC",
+            "param_0": 185.3,
+            "param_1": 458.75,
+            "param_2": 464.8,
+            "param_3": -1.3
+        },
+        {
+            "Symbol": "BANKBARODA",
+            "param_0": 182.93,
+            "param_1": 195.1,
+            "param_2": 201.1,
+            "param_3": -2.98
+        },
+        {
+            "Symbol": "M&M",
+            "param_0": 180.92,
+            "param_1": 1471.45,
+            "param_2": 1493.35,
+            "param_3": -1.47
+        },
+        {
+            "Symbol": "POWERGRID",
+            "param_0": 177.35,
+            "param_1": 249.75,
+            "param_2": 251.8,
+            "param_3": -0.81
+        },
+        {
+            "Symbol": "TVSMOTOR",
+            "param_0": 163.79,
+            "param_1": 1371.95,
+            "param_2": 1369.7,
+            "param_3": 0.16
+        },
+        {
+            "Symbol": "HINDCOPPER",
+            "param_0": 163.5,
+            "param_1": 147,
+            "param_2": 150.4,
+            "param_3": -2.26
+        },
+        {
+            "Symbol": "PNB",
+            "param_0": 158.22,
+            "param_1": 60,
+            "param_2": 61.35,
+            "param_3": -2.2
+        },
+        {
+            "Symbol": "PFC",
+            "param_0": 154.49,
+            "param_1": 257.2,
+            "param_2": 258.85,
+            "param_3": -0.64
+        },
+        {
+            "Symbol": "LT",
+            "param_0": 153.72,
+            "param_1": 2629.45,
+            "param_2": 2666.65,
+            "param_3": -1.4
+        },
+        {
+            "Symbol": "IDFCFIRSTB",
+            "param_0": 149.32,
+            "param_1": 86.65,
+            "param_2": 88.5,
+            "param_3": -2.09
+        },
+        {
+            "Symbol": "BANDHANBNK",
+            "param_0": 143.14,
+            "param_1": 221.4,
+            "param_2": 227.8,
+            "param_3": -2.81
+        },
+        {
+            "Symbol": "TATACOMM",
+            "param_0": 141.74,
+            "param_1": 1717.55,
+            "param_2": 1762.75,
+            "param_3": -2.56
+        },
+        {
+            "Symbol": "GAIL",
+            "param_0": 141.52,
+            "param_1": 116.1,
+            "param_2": 120.35,
+            "param_3": -3.53
+        },
+        {
+            "Symbol": "DIVISLAB",
+            "param_0": 137.1,
+            "param_1": 3676.9,
+            "param_2": 3639.5,
+            "param_3": 1.03
+        },
+        {
+            "Symbol": "ADANIPORTS",
+            "param_0": 136.45,
+            "param_1": 758.85,
+            "param_2": 765.35,
+            "param_3": -0.85
+        },
+        {
+            "Symbol": "OBEROIRLTY",
+            "param_0": 136.11,
+            "param_1": 1104.1,
+            "param_2": 1108.25,
+            "param_3": -0.37
+        },
+        {
+            "Symbol": "IEX",
+            "param_0": 132.16,
+            "param_1": 127.1,
+            "param_2": 127.4,
+            "param_3": -0.24
+        },
+        {
+            "Symbol": "RBLBANK",
+            "param_0": 128.21,
+            "param_1": 220.6,
+            "param_2": 224.6,
+            "param_3": -1.78
+        },
+        {
+            "Symbol": "HCLTECH",
+            "param_0": 128.02,
+            "param_1": 1132,
+            "param_2": 1138.5,
+            "param_3": -0.57
+        },
+        {
+            "Symbol": "ASHOKLEY",
+            "param_0": 125.11,
+            "param_1": 182.55,
+            "param_2": 184.2,
+            "param_3": -0.9
+        },
+        {
+            "Symbol": "HAL",
+            "param_0": 122.51,
+            "param_1": 3805.05,
+            "param_2": 3865.9,
+            "param_3": -1.57
+        },
+        {
+            "Symbol": "DIXON",
+            "param_0": 121.63,
+            "param_1": 4125.05,
+            "param_2": 4135.55,
+            "param_3": -0.25
+        },
+        {
+            "Symbol": "TITAN",
+            "param_0": 120.38,
+            "param_1": 2985.55,
+            "param_2": 3001.9,
+            "param_3": -0.54
+        }
+    ]
+}

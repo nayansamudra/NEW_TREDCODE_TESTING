@@ -1,0 +1,106 @@
+// ------------- FOR CENTER CALCULATION (OHLC) (START) -------------------
+ohlc_temp = []
+for (var i = 0; i < ohlc.length; i++) {
+    ohlc_temp.push(ohlc[i])
+}
+// adding 0 before the data START --> FOR CANDLESTICK --> ONLY FOR CALCULATION PURPOSE
+if (ohlc_temp.length < 125) {
+    ohlc_temp_new = []
+    prev_time = moment.unix(ohlc_temp[0][0]).format('HH.mm')
+    prev_time = parseFloat(prev_time)
+    Timestamp = parseFloat(ohlc_temp[0][0])
+    while (prev_time > 9.18) {
+        Timestamp = Timestamp - 180
+        ohlc_temp_new.push([
+            parseFloat(Timestamp), // the date
+            parseFloat(0),  // open
+            parseFloat(0),  // high
+            parseFloat(0),  // low
+            parseFloat(0),  // close
+        ]);
+        prev_time = moment.unix(Timestamp).format('HH.mm')
+        prev_time = parseFloat(prev_time)
+    }
+    ohlc_temp_new_1 = []
+    for (var i = (ohlc_temp_new.length - 1); i >= 0; i--) {
+        ohlc_temp_new_1.push(ohlc_temp_new[i])
+    }
+    for (var i = 0; i < ohlc_temp.length; i++) {
+        ohlc_temp_new_1.push(ohlc_temp[i])
+    }
+    ohlc_temp = ohlc_temp_new_1
+}
+
+// adding NaN before the data START --> FOR CANDLESTICK 
+if (ohlc.length < 125) {
+    ohlc_new = []
+    prev_time = moment.unix(ohlc[0][0]).format('HH.mm')
+    prev_time = parseFloat(prev_time)
+    Timestamp = parseFloat(ohlc[0][0])
+    while (prev_time > 9.18) {
+        Timestamp = Timestamp - 180
+        ohlc_new.push([
+            parseFloat(Timestamp), // the date
+            parseFloat(NaN),  // open
+            parseFloat(NaN),  // high
+            parseFloat(NaN),  // low
+            parseFloat(NaN),  // close
+        ]);
+        prev_time = moment.unix(Timestamp).format('HH.mm')
+        prev_time = parseFloat(prev_time)
+    }
+
+    ohlc_new_1 = []
+    for (var i = (ohlc_new.length - 1); i >= 0; i--) {
+        ohlc_new_1.push(ohlc_new[i])
+    }
+    for (var i = 0; i < ohlc.length; i++) {
+        ohlc_new_1.push(ohlc[i])
+    }
+    ohlc = ohlc_new_1
+}
+// ------------- FOR CENTER CALCULATION (OHLC) (END) -------------------
+
+
+
+// ------------- FOR CENTER CALCULATION (VOLUME) (START) -------------------
+Volume_temp = Volume
+
+// adding NaN before the data START --> FOR VOLUME
+if (Volume.length < 125) {
+    Volume_new = []
+    Volume_temp_new = []
+    prev_time = moment.unix(Volume[0]['x']).format('HH.mm')
+    prev_time = parseFloat(prev_time)
+    Timestamp = parseFloat(Volume[0]['x'])
+    while (prev_time > 9.18) {
+        Timestamp = Timestamp - 180
+        Volume_new.push({
+            x: parseFloat(Timestamp), // the date
+            y: parseFloat(NaN), // the Volume
+            color: VolumeBarColor(parseFloat(0)),
+        });
+        Volume_temp_new.push({
+            x: parseFloat(Timestamp), // the date
+            y: parseFloat(NaN), // the Volume
+            color: VolumeBarColor(parseFloat(0)),
+        });
+        prev_time = moment.unix(Timestamp).format('HH.mm')
+        prev_time = parseFloat(prev_time)
+    }
+
+    Volume_new_1 = []
+    Volume_temp_new_1 = []
+    for (var i = (Volume_new.length - 1); i >= 0; i--) {
+        Volume_new_1.push(Volume_new[i])
+        Volume_temp_new_1.push(Volume_temp_new[i])
+    }
+    for (var i = 0; i < Volume.length; i++) {
+        Volume_new_1.push(Volume[i])
+        Volume_temp_new_1.push(Volume_temp[i])
+    }
+
+    Volume = Volume_new_1
+    Volume_temp = Volume_temp_new_1
+}
+      // ------------- FOR CENTER CALCULATION (VOLUME) (END) -------------------

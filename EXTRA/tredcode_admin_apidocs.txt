@@ -1,0 +1,37 @@
+root: https://testing.tcistudents.in
+route: /api/admin
+
+
+FOR Dashboard Page (page 1)
+
+1. /get_tredcode_users [post]
+	No parameters
+
+2. /insert_replace_user [post]
+	
+	Form data:
+	email: 'myemail@gmail.com'
+	role: 'client' or 'admin'
+	access: {'p1':1,'p2':1,'p3':1,'p4':1,'idx':1,'mf':1}    // this will be a dict jsonified
+
+3. /delete_user
+
+	Form data:
+	email: 'myemail@gmail.com'
+
+
+FOR Signal Page (page 2)
+	
+
+1. /get_signal
+
+2. /insert_signal
+	Form data:
+	text
+	file
+	
+3. /delete_signal
+	Form data:
+	timestamp
+	
+

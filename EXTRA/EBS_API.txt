@@ -1,0 +1,70 @@
+sectorial_flow.html
+
+1. chart = "https://ebs.tredcode.com/study-data/SECTORIAL VIEW"
+2. Table_1(nifty50) = "https://ebs.tredcode.com/study-data/NIFTY 50"
+3. Table_2(bnknifty) = "https://ebs.tredcode.com/study-data/NIFTY BANK"
+4. Table_3(niftyauto) = "https://ebs.tredcode.com/study-data/NIFTY AUTO"
+5. Table_4(niftyfinserv) = "https://ebs.tredcode.com/study-data/NIFTY FIN SERV"
+6. Table_5(niftyfmcg) = "https://ebs.tredcode.com/study-data/NIFTY FMCG"
+7. Table_6(niftyit) = "https://ebs.tredcode.com/study-data/NIFTY IT"
+8. Table_7(niftymedia) = "https://ebs.tredcode.com/study-data/NIFTY MEDIA"
+9. Table_8(niftymetal) = "https://ebs.tredcode.com/study-data/NIFTY METAL"
+10. Table_9(niftypharma) = "https://ebs.tredcode.com/study-data/NIFTY PHARMA"
+11. Table_10(niftypsubank) = "https://ebs.tredcode.com/study-data/NIFTY PSU BANK"
+12. Table_11(pvtbank) = "https://ebs.tredcode.com/study-data/NIFTY PVT BANK"
+13. Table_12(reality) = "https://ebs.tredcode.com/study-data/NIFTY REALITY"
+14. Table_13(energy) = "https://ebs.tredcode.com/study-data/NIFTY ENERGY"
+
+
+swing_center.html
+
+1. donut_chart_1 = "https://ebs.tredcode.com/study-data/Nifty 50 ADVANCE DECLINE"
+2. donut_chart_2 = "https://ebs.tredcode.com/study-data/FO ADVANCE DECLINE"
+3. semichart_radialbar_1 = "https://ebs.tredcode.com/adv-dec/NIFTY"
+4. semichart_radialbar_2 = "https://ebs.tredcode.com/adv-dec/FO"
+5. Table_1 (tendayhighbo) = "https://ebs.tredcode.com/study-symbol/10 DAY HIGH BO?count=5"
+6. Table_2 (tendaylowbo) = "https://ebs.tredcode.com/study-symbol/10 DAY LOW BO?count=5"
+7. Table_3 (fiftydayhighbo) = "https://ebs.tredcode.com/study-symbol/50 DAY HIGH BO?count=5"
+8. Table_4 (fiftydaylowbo) = "https://ebs.tredcode.com/study-symbol/50 DAY LOW BO?count=5"
+9. Barchart = "https://ebs.tredcode.com/study-data/MAJOR INDEX WEEKLY PERFORMANCE"
+
+
+market_depth.html
+
+1. Chart_1 = 'https://ebs.tredcode.com/study-data/MONEYFLOW ABS B'
+2. Chart_2 = 'https://ebs.tredcode.com/study-data/MONEYFLOW REL B'
+3. Table_1(highpowstocks) = "https://ebs.tredcode.com/study-data/MONEYFLOW ABS"
+4. Table_2(intradayboost) = "https://ebs.tredcode.com/study-data/MONEYFLOW REL"
+5. Table_3(toplevelstocks) = "https://ebs.tredcode.com/study-data/NEAR DAYS HIGH"
+6. Table_4(lowlevelstocks) = "https://ebs.tredcode.com/study-data/NEAR DAYS LOW"
+7. Table_5(topgainer) = "https://ebs.tredcode.com/study-data/GAINER"
+8. Table_6(toploser) = "https://ebs.tredcode.com/study-data/LOSSER"
+
+
+pro_setup.html 
+
+1. chart_1 = 'https://ebs.tredcode.com/study-data/5 minute MOMENTUM SPIKE'
+2. chart_2 = 'https://ebs.tredcode.com/study-data/10 minute MOMENTUM SPIKE'
+3. Table_1(downsidelomintra) = "https://ebs.tredcode.com/study-symbol/TCI BULL DIV 15 MIN?count=5"
+4. Table_2(upsidelomintra) = "https://ebs.tredcode.com/study-symbol/TCI BEAR DIV 15 MIN?count=5"
+5. Table_3(downsidelomswing) = "https://ebs.tredcode.com/study-symbol/TCI BULL DIV 1 HR?count=5"
+6. Table_4(upsidelomswing) = "https://ebs.tredcode.com/study-symbol/TCI BEAR DIV 1 HR?count=5"
+7. Table_5(multiresistancebo) = "https://ebs.tredcode.com/study-symbol/2 DAY HIGH BREAK LIVE?count=5"
+8. Table_6(multisupportbo) = "https://ebs.tredcode.com/study-symbol/2 DAY LOW BREAK LIVE?count=5"
+9. Table_7(multiresistancebo_eod) = "https://ebs.tredcode.com/study-symbol/TCI 2 day high EOD?count=5"
+10. Table_8(multisupportbo_eod) = "https://ebs.tredcode.com/study-symbol/TCI 2 day low EOD?count=5"
+11. Table_9(dailycontraction) = "https://ebs.tredcode.com/study-symbol/TCI NR7 INSIDER EOD?count=5"
+12. Table_10(premarket_NIFTY) = "https://ebs.tredcode.com/prevol-rank/latest/NIFTY"
+13. Table_10(premarket_FO) = "https://ebs.tredcode.com/prevol-rank/latest/FO"
+
+
+moneyflux.html
+
+1. HeatMap (NIFTY50) = "https://ebs.tredcode.com/study-data/Heat%20Map%20Nifty50"
+2. HeatMap (BANKNIFTY) = "https://ebs.tredcode.com/study-data/Heat%20Map%20BNF"
+3. HeatMap (FINNIFTY) = "https://ebs.tredcode.com/study-data/Heat%20Map%20FINNIFTY"
+
+
+server_time = https://ebs.tredcode.com/current?type=servertime
+
+

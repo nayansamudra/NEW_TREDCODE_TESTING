@@ -1,0 +1,52 @@
+root: https://testing.tcistudents.in
+route: /api/admin
+
+
+FOR Dashboard Page (page 1)
+
+1. /get_tredcode_users [post]
+	No parameters
+
+2. /insert_replace_user [post]
+	
+	Form data:
+	email: 'myemail@gmail.com'
+	role: 'client' or 'admin'
+	access: {'p1':1,'p2':1,'p3':1,'p4':1,'idx':1,'mf':1}    // this will be a dict jsonified
+
+3. /delete_user
+
+	Form data:
+	email: 'myemail@gmail.com'
+
+
+FOR Signal Page (page 2)
+	
+==ADMIN==
+1. /get_signal
+
+2. /insert_signal
+	Form data:
+	text
+	file
+	
+3. /delete_signal
+	Form data:
+	timestamp
+	
+==CLIENT==
+
+1. /get_signal_chat (fetch latest chat messages)
+
+2. /unset_signal_self   (to send seen-message command to server )
+
+3. /check_signal     (will get 1 or 0 in response, depending of this show notification in UI)
+
+
+
+FOR TOKEN Update (page 3) pagename:"update_token.html"
+
+1. /update_xsrf_csrf [POST]
+	Form data:
+	xsrf (text)
+	csrf (text)
