@@ -240,6 +240,24 @@
                 width: 100% !important;
             }
         }
+
+        .nsm7Bb-HzV7m-LgbsSe {
+            border-radius: 7px !important;
+            background-color: #1c1c1c !important;
+            color: #b5b5b5 !important;
+            height: 50px !important
+        }
+
+        @media (max-width:375px) {
+            #new_user {
+                margin-left: 5px !important;
+                padding: 12px 10px 0 10px !important;
+            }
+        }
+
+        #new_user {
+            padding-top: 12px !important;
+        }
     </style>
 </head>
 
@@ -280,12 +298,14 @@
                 <div class="d-flex justify-content-center">
                     <div class="d-flex d-inline-flex">
                         <div id="g_id_onload"
-                        data-client_id="256759331803-l4q84jqdcnhuu5aevgtee6v5l6v4oi8m.apps.googleusercontent.com"
-                        data-callback="onSignIn"></div>
+                            data-client_id="256759331803-l4q84jqdcnhuu5aevgtee6v5l6v4oi8m.apps.googleusercontent.com"
+                            data-callback="onSignIn"></div>
                         <div class="g_id_signin" data-type="standard"></div>
                     </div>
                     <!-- <a href="#" class="m-0 me-3 get-started-btn scrollto d-flex justify-content-center" style="cursor: pointer;">Login</a> -->
-                    <a href="https://www.tradingcafeindia.in/trading-journal-access" class="m-0 ms-3 get-started-btn scrollto d-flex justify-content-center" style="cursor: pointer;">New User</a>
+                    <a href="https://www.tradingcafeindia.in/trading-journal-access" id="new_user"
+                        class="m-0 ms-3 get-started-btn scrollto d-flex justify-content-center"
+                        style="cursor: pointer;">New User</a>
                 </div>
             </div>
         </div>
@@ -690,10 +710,6 @@
 
             var curr_url = window.location.href
             if (curr_url.includes("https://tredcode.com")) { window.location.replace('https://tredcode.tradingcafeindia.com') }
-
-            $("#new_user").click(function () {
-                window.location.href = "/guest";
-            });
 
             $('#close').click(function () {
                 $('.lightbox-column').empty()
