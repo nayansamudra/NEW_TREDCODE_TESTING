@@ -496,6 +496,8 @@ $(document).ready(function () {
     let email = username(cookieValue_1)
     $('#uname').text(email[0])
 
+    // return [email {0}, dhan {1}, only_dhan {2}, td_full {3}, roles {4}]
+
     if (email[1] == 1) {
       $('#trading_journal a').attr('href', '/trading-journal')
       $('.trading_journal').attr("onclick", "location.href='/trading-journal'")
@@ -510,8 +512,13 @@ $(document).ready(function () {
       check_message()
       setInterval(function () { check_message(); }, 25000);
 
-      $('#myDiv').attr('style', 'display:block !important')
-      $('#t_sidebar').attr('style', 'display:block !important')
+      if (email[1] == 0) {
+        $('#myDiv').attr('style', 'display:block !important')
+        $('#t_sidebar').attr('style', 'display:block !important')
+      } else if (email[1] == 1) {
+        $('#myDiv').attr('style', 'display:none')
+        $('#t_sidebar').attr('style', 'display:none')
+      }
 
       try {
         document.querySelector("#updates_btn").addEventListener("click", function () {
