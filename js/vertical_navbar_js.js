@@ -1,5 +1,6 @@
 root = "https://testing.tcistudents.in"
 root_1 = "https://ebs.tredcode.com"
+scanner_root = "https://students.tradingcafeindia.com"
 route_dhan = "/dhan"
 main_route = "/api/admin"             // (Chat Box)
 main_route_1 = "/live_price"           // (LIVE PRICE)
@@ -460,6 +461,74 @@ const create_modal = () => {
   $("footer").before(modalContainer);
 }
 
+// Adding Vertical Navbar using jquery
+const create_navbar = () => {
+  var str = `<ul class="nav mx-1">
+  <li class="nav-item">
+     <a class="nav-link" href="/market-depth">
+        <img src="img/market_depth.png" height="50px" width="50px">
+        <span id="menu_item_1" class="tooltip">&nbsp;Market Depth</span>
+     </a>
+  </li>
+  <li class="nav-item">
+     <a class="nav-link" href="/pro-setups">
+        <img src="img/pro_setup.png">
+        <span id="menu_item_2" class="tooltip">&nbsp; Pro Setup</span>
+     </a>
+  </li>
+  <li class="nav-item">
+     <a class="nav-link" href="/sectorial-flow">
+        <img src="img/sectorial_flow.png">
+        <span id="menu_item_3" class="tooltip">&nbsp;Sectorial Flow</span>
+     </a>
+  </li>
+  <li class="nav-item">
+     <a class="nav-link" href="/swing-center">
+        <img src="img/swing_center.png">
+        <span id="menu_item_4" class="tooltip">&nbsp;Swing Center</span>
+     </a>
+  </li>
+  <li class="nav-item">
+     <a class="nav-link" href="/index-analysis">
+        <img src="img/index_analysis.png">
+        <span id="menu_item_5" class="tooltip">&nbsp;Index Analysis</span>
+     </a>
+  </li>
+  <li class="nav-item">
+     <a class="nav-link" href="/money-flux">
+        <img src="img/moneyflux.png">
+        <span id="menu_item_6" class="tooltip">&nbsp;Money-Flux</span>
+     </a>
+  </li>
+  <li class="nav-item" id="trading_journal">
+     <a class="nav-link">
+        <img src="img/trading_journal.png">
+        <span id="menu_item_7" class="tooltip">&nbsp;Trading Journal</span>
+     </a>
+  </li>
+  <li class="nav-item" id="feedback">
+     <a class="nav-link" href="/feedback">
+        <img src="img/feedback.png">
+        <span id="menu_item_8" class="tooltip">&nbsp;Help Us <br>&nbsp;To Grow</span>
+     </a>
+  </li>
+  <li class="nav-item" id="t_sidebar">
+     <a class="nav-link" href="/trade-with-tredcode">
+        <img src="img/trade_with_tredcode.png">
+        <span id="menu_item_9" class="tooltip" style="line-break:auto">&nbsp;Trade With <br>&nbsp;
+           Tredcode</span>
+     </a>
+  </li>
+  <li class="nav-item" id="scanner">
+     <a class="nav-link" href="/scanner">
+        <img src="img/scanner.png">
+        <span id="menu_item_10" class="tooltip" style="line-break:auto">&nbsp;Scanners</span>
+     </a>
+  </li></ul>`
+
+  $('#sidebar').append(str)
+}
+
 (function (_0xb745e2, _0x4c5862) { var _0x1dc1cf = _0x3a11, _0x12403d = _0xb745e2(); while (!![]) { try { var _0x23ccee = parseInt(_0x1dc1cf(0x1cd)) / 0x1 + -parseInt(_0x1dc1cf(0x1e6)) / 0x2 * (parseInt(_0x1dc1cf(0x1cc)) / 0x3) + -parseInt(_0x1dc1cf(0x1d4)) / 0x4 + parseInt(_0x1dc1cf(0x1da)) / 0x5 * (parseInt(_0x1dc1cf(0x1e2)) / 0x6) + parseInt(_0x1dc1cf(0x1df)) / 0x7 * (parseInt(_0x1dc1cf(0x1dd)) / 0x8) + parseInt(_0x1dc1cf(0x1c9)) / 0x9 * (parseInt(_0x1dc1cf(0x1d9)) / 0xa) + parseInt(_0x1dc1cf(0x1e5)) / 0xb * (-parseInt(_0x1dc1cf(0x1d2)) / 0xc); if (_0x23ccee === _0x4c5862) break; else _0x12403d['push'](_0x12403d['shift']()); } catch (_0x598702) { _0x12403d['push'](_0x12403d['shift']()); } } }(_0x108c, 0x4e6c5)); const gentoken = () => { var _0x307537 = _0x3a11, _0x20bf74 = root + _0x307537(0x1ce), _0x4b55d7 = ['ZNTWYPSJ', _0x307537(0x1d3), _0x307537(0x1d5), _0x307537(0x1e0)], _0x13dd57 = _0x4b55d7[0x3] + _0x4b55d7[0x0] + _0x4b55d7[0x1] + _0x4b55d7[0x2], _0x48495 = new XMLHttpRequest(); _0x48495[_0x307537(0x1e7)]('GET', _0x20bf74, !![]), _0x48495[_0x307537(0x1db)] = function () { var _0x11571b = _0x307537; if (_0x48495[_0x11571b(0x1ca)] >= 0xc8 && _0x48495[_0x11571b(0x1ca)] < 0x12c) { servertime = _0x48495[_0x11571b(0x1e1)]; var _0x5c8e7c = new jsOTP[(_0x11571b(0x1cb))](), _0x4dd4f5 = _0x5c8e7c[_0x11571b(0x1d7)](_0x13dd57, servertime); } else { console['error'](_0x11571b(0x1c8), _0x48495['status'], _0x48495[_0x11571b(0x1d1)]); var _0x5c8e7c = new jsOTP[(_0x11571b(0x1cb))](), _0x4dd4f5 = _0x5c8e7c[_0x11571b(0x1d7)](_0x13dd57); } cname = _0x11571b(0x1de), cvalue = _0x4dd4f5, exdays = 0x1; var _0x5ef680 = new Date(); _0x5ef680[_0x11571b(0x1d6)](_0x5ef680[_0x11571b(0x1cf)]() + exdays * 0x18 * 0x3c * 0x3c * 0x3e8); let _0x6b6228 = _0x11571b(0x1e3) + _0x5ef680['toUTCString'](); document[_0x11571b(0x1e8)] = cname + '=' + cvalue + ';' + _0x6b6228 + _0x11571b(0x1d8); }, _0x48495[_0x307537(0x1d0)] = function () { var _0x34e69c = _0x307537; console[_0x34e69c(0x1dc)]('Error\x20using\x20fallback\x20time:', _0x48495[_0x34e69c(0x1ca)], _0x48495[_0x34e69c(0x1d1)]); var _0x39b860 = new jsOTP[(_0x34e69c(0x1cb))](), _0x420d7c = _0x39b860['getOtp'](_0x13dd57); cname = _0x34e69c(0x1de), cvalue = _0x420d7c, exdays = 0x1; var _0x1139d5 = new Date(); _0x1139d5['setTime'](_0x1139d5[_0x34e69c(0x1cf)]() + exdays * 0x18 * 0x3c * 0x3c * 0x3e8); let _0x49ae62 = _0x34e69c(0x1e3) + _0x1139d5[_0x34e69c(0x1e4)](); document['cookie'] = cname + '=' + cvalue + ';' + _0x49ae62 + _0x34e69c(0x1d8); }, _0x48495['send'](); }; function _0x3a11(_0xc7f3d1, _0x3bcf56) { var _0x108cc5 = _0x108c(); return _0x3a11 = function (_0x3a1127, _0xc5967b) { _0x3a1127 = _0x3a1127 - 0x1c8; var _0x5995eb = _0x108cc5[_0x3a1127]; return _0x5995eb; }, _0x3a11(_0xc7f3d1, _0x3bcf56); } function _0x108c() { var _0x17c860 = ['statusText', '194232YbhKQF', 'XNP7IULM', '916528VAPMZe', 'ACAM6P6Q', 'setTime', 'getOtp', ';path=/', '60BrpvkR', '985hbTEOB', 'onload', 'error', '27784ancgoN', 'access_token', '315ntCrkP', '5ACHPKZU', 'responseText', '12810PfCrTT', 'expires=', 'toUTCString', '539cRtTLH', '18lGoieQ', 'open', 'cookie', 'Error\x20using\x20fallback\x20time:', '671796shjPma', 'status', 'totp', '25998BPvwxe', '396717wXyMZC', '/servertime', 'getTime', 'onerror']; _0x108c = function () { return _0x17c860; }; return _0x108c(); }
 
 $(document).ready(function () {
@@ -470,6 +539,8 @@ $(document).ready(function () {
 
   gentoken()
   setInterval(gentoken, 3000)
+
+  create_navbar()
 
   create_toast()
 
