@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Scanners | Tredcode</title>
+   <title>FII / DII | Tredcode</title>
    <!-- Bootstrap CSS -->
    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
@@ -12,7 +12,7 @@
 
    <!-- Manual CSS -->
    <link rel="stylesheet" type="text/css" href="css/header.css">
-   <link rel="stylesheet" type="text/css" href="css/scanner.css">
+   <link rel="stylesheet" type="text/css" href="css/fii_dii_data.css">
 
    <!-- ICONS -->
    <link rel="icon" href="img/Tredcode_logo.png" sizes="32x32" />
@@ -27,6 +27,20 @@
    <!-- Data Table -->
    <!-- <link rel="stylesheet" href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" /> -->
    <link rel="stylesheet" type="text/css" href="css/datatables.css">
+
+   <!-- Highchart -->
+   <script src="js/highstock.js"></script>
+   <script src="js/data.js"></script>
+   <script src="js/treemap.js"></script>
+   <script src="js/accessibility.js"></script>
+   <script src="js/pattern_fill.js"></script>
+
+   <style>
+      .highcharts-xaxis-grid,
+      .highcharts-credits {
+         display: none !important;
+      }
+   </style>
 </head>
 
 <body>
@@ -35,7 +49,7 @@
          <a class="navbar-brand brand-logo mx-2" href="/home"><img src="img/Tredcode_logo.png" alt="logo" /> </a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-         <span id="page_heading" class="text-light h3 m-auto">Scanners</span>
+         <span id="page_heading" class="text-light h3 m-auto">FII / DII DATA</span>
          <ul class="nifty navbar-nav navbar-nav-right py-3 px-2" id="nifty_block_head">
             <li class="text px-1"><span id="swingname1">NIFTY</span></li>
             <li class="amount px-1 text-light"><span id="swingamount1">-</span></li>
@@ -108,70 +122,63 @@
 
             <!-- row 1 -->
             <div class="row d-flex justify-content-center">
-               <div class="col-xxl-8 col-lg-11 bg-color text-light grid-margin rounded pb-4 mx-3">
-                  <div class="row m-3 px-3 d-flex align-items-center heading_font_size_row">
-                     <div class="col-8  px-1 font-weight-bold heading_font_size">
-                        DELIVERY SCANNER<a class="live"><i class="fa-solid fa-circle fa-sm"></i>&nbsp;ACTIVE</a>
-                     </div>
-                     <div class="col-4 px-1 text-light">
-                        <input id="scanner_datatable_ip" class="float-right new_input" placeholder="Search Stock">
-                     </div>
-                     <div class="mt-2 col-12 px-1 text-right">
+               <div class="col-md-10 grid-margin stretch-card p-0-mob">
+                  <div class="card rounded">
+                     <div class="card-head" style="margin-bottom: 0;">
                         <div class="row">
-                           <div class="px-0 col-7">
-                              <span style="color: #FDBA57; font-weight: 500;">Type of Scan: </span>
-                              <div class="row">
-                                 <div class="mt-2 col-md-12" style="padding: 0px !important;">
-                                    <label class="radio-container">
-                                       <input type="radio" name="market_option" value="_hd_data_" checked>
-                                       <span class="checkmark"></span>
-                                       Highest Delivery
-                                    </label>
-                                 </div>
-                                 <div class="mt-2 col-md-12" style="padding: 0px !important;">
-                                    <label class="radio-container">
-                                       <input type="radio" name="market_option" value="_dsp_data_">
-                                       <span class="checkmark"></span>
-                                       Delivery Spike
-                                    </label>
-                                 </div>
-                              </div>
+                           <div class="col-md-8">
+                              <span class="text-light font-weight-bold">FII / DII <a class="live"><i
+                                       class="fa-solid fa-circle fa-sm"></i>&nbsp;ACTIVE</a></span>
                            </div>
-                           <div class="pe-0 col-5">
-                              <span style="color: #FDBA57; font-weight: 500;">Segment: </span>
+                        </div>
+                     </div>
+                     <div class="card-body barchart-percentage-wrap chart_container_7">
+                        <div class="dataTableContainer">
+                           <div id="blur-background" class="d-none blur-background"></div>
+                           <div id="fii_dii_chart"></div>
+                           <div id="lock-icon" class="d-none lock-icon">
+                              <div class="row d-flex justify-content-center">
+                                 <i class="fa-solid fa-lock fa-5x"></i>
+                              </div>
                               <div class="row">
-                                 <div class="mt-2 col-md-12" style="padding: 0px !important;">
-                                    <label class="radio-container">
-                                       <input type="radio" name="market_option_1" value="fno" checked>
-                                       <span class="checkmark"></span>
-                                       F&O
-                                    </label>
-                                 </div>
-                                 <div class="mt-2 col-md-12" style="padding: 0px !important;">
-                                    <label class="radio-container">
-                                       <input type="radio" name="market_option_1" value="n500">
-                                       <span class="checkmark"></span>
-                                       Nifty500
-                                    </label>
-                                 </div>
+                                 <span class="mt-2 text-center" style="font-weight: bold; font-size: 22px;">Only for
+                                    TCI students</span>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
+               </div>
+            </div>
+
+            <!-- row 2 -->
+            <div class="row d-flex justify-content-center">
+               <div class="col-md-10 bg-color text-light grid-margin rounded pb-4 mx-3">
+                  <div class="row m-3 d-flex align-items-center heading_font_size_row">
+                     <div class="col-8  px-1 font-weight-bold heading_font_size">
+                        Detailed FII/DII Capital Market Activity (in Cr.)<a class="live live-2"><i
+                              class="fa-solid fa-circle fa-sm"></i>&nbsp;ACTIVE</a>
+                     </div>
+                     <div class="col-4 px-1 text-light">
+                        <input id="fii_dii_datatable_ip" class="float-right new_input" placeholder="Search Stock">
+                     </div>
+                  </div>
                   <div class="dataTableContainer">
                      <div id="blur-background" class="d-none blur-background"></div>
-                     <table id="scanner_datatable" class="new_table table-striped table-borderless dataTableSc">
-                        <thead id="scanner_datatable_thead">
+                     <table id="fii_dii_datatable" class="new_table table-striped table-borderless dataTableFD">
+                        <thead id="fii_dii_datatable_thead">
                            <tr>
-                              <th>Name</th>
-                              <th>LTP</th>
-                              <th id="3rd_col_heading">Volume</th>
-                              <th id="4th_col_heading">Avg. Del %</th>
-                              <th id="5th_col_heading">Delivery (%)</th>
+                              <th>Date</th>
+                              <th>FII Buy</th>
+                              <th>FII Sell</th>
+                              <th>FII Net</th>
+                              <th>In Market</th>
+                              <th>DII Net</th>
+                              <th>DII Buy</th>
+                              <th>DII Sell</th>
                            </tr>
                         </thead>
-                        <tbody id="scanner_datatable_tbody"></tbody>
+                        <tbody id="fii_dii_datatable_tbody"></tbody>
                      </table>
                      <div id="lock-icon" class="d-none lock-icon">
                         <div class="row d-flex justify-content-center">
@@ -273,9 +280,9 @@
    <script src="js/all.min.js"></script>
 
    <!-- Manual Jquery -->
-   <script src="js/gg.min.js"></script>
-   <script src="js/vertical_navbar_js.js"></script>
-   <script src="js/scanner.js"></script>
+   <!-- <script src="js/gg.min.js"></script> -->
+   <!-- <script src="js/vertical_navbar_js.js"></script> -->
+   <script src="js/fii_dii_data.js"></script>
 </body>
 
 </html>

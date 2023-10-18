@@ -500,29 +500,35 @@ const create_navbar = () => {
         <span id="menu_item_6" class="tooltip">&nbsp;Money-Flux</span>
      </a>
   </li>
+  <li class="nav-item" id="scanner">
+     <a class="nav-link" href="/scanner">
+        <img src="img/scanner.png">
+        <span id="menu_item_7" class="tooltip" style="line-break:auto">&nbsp;Scanners</span>
+     </a>
+  </li>
+  <li class="nav-item" id="fii_dii_data">
+     <a class="nav-link" href="/fii-dii-data">
+        <img src="img/fii_dii_data.png">
+        <span id="menu_item_8" class="tooltip" style="line-break:auto">&nbsp;FII / DII</span>
+     </a>
+  </li>
   <li class="nav-item" id="trading_journal">
      <a class="nav-link">
         <img src="img/trading_journal.png">
-        <span id="menu_item_7" class="tooltip">&nbsp;Trading Journal</span>
+        <span id="menu_item_9" class="tooltip">&nbsp;Trading Journal</span>
      </a>
   </li>
   <li class="nav-item" id="feedback">
      <a class="nav-link" href="/feedback">
         <img src="img/feedback.png">
-        <span id="menu_item_8" class="tooltip">&nbsp;Help Us <br>&nbsp;To Grow</span>
+        <span id="menu_item_10" class="tooltip">&nbsp;Help Us <br>&nbsp;To Grow</span>
      </a>
   </li>
   <li class="nav-item" id="t_sidebar">
      <a class="nav-link" href="/trade-with-tredcode">
         <img src="img/trade_with_tredcode.png">
-        <span id="menu_item_9" class="tooltip" style="line-break:auto">&nbsp;Trade With <br>&nbsp;
+        <span id="menu_item_11" class="tooltip" style="line-break:auto">&nbsp;Trade With <br>&nbsp;
            Tredcode</span>
-     </a>
-  </li>
-  <li class="nav-item" id="scanner">
-     <a class="nav-link" href="/scanner">
-        <img src="img/scanner.png">
-        <span id="menu_item_10" class="tooltip" style="line-break:auto">&nbsp;Scanners</span>
      </a>
   </li></ul>`
 
