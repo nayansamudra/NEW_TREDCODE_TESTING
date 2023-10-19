@@ -500,16 +500,16 @@ const create_navbar = () => {
         <span id="menu_item_6" class="tooltip">&nbsp;Money-Flux</span>
      </a>
   </li>
-  <li class="nav-item" id="scanner">
-     <a class="nav-link" href="/delivery-scanner">
+  <li class="nav-item" id="delivery_scanner">
+     <a class="nav-link">
         <img src="img/scanner.png">
-        <span id="menu_item_7" class="tooltip" style="line-break:auto">&nbsp;Delivery Scanners</span>
+        <span id="menu_item_7" class="tooltip">&nbsp;Delivery Scanners</span>
      </a>
   </li>
   <li class="nav-item" id="fii_dii_data">
-     <a class="nav-link" href="/fii-dii-data">
+     <a class="nav-link">
         <img src="img/fii_dii_data.png">
-        <span id="menu_item_8" class="tooltip" style="line-break:auto">&nbsp;FII / DII</span>
+        <span id="menu_item_8" class="tooltip">&nbsp;FII / DII</span>
      </a>
   </li>
   <li class="nav-item" id="trading_journal">
@@ -576,9 +576,17 @@ $(document).ready(function () {
     // return [email {0}, dhan {1}, only_dhan {2}, td_full {3}, roles {4}]
 
     if (email[1] == 1) {
+      $('#delivery_scanner a').attr('href', '/delivery-scanner')
+      $('.delivery_scanner').attr("onclick", "location.href='/delivery-scanner'")
+      $('#fii_dii_data a').attr('href', '/fii-dii-data')
+      $('.fii_dii_data').attr("onclick", "location.href='/fii-dii-data'")
       $('#trading_journal a').attr('href', '/trading-journal')
       $('.trading_journal').attr("onclick", "location.href='/trading-journal'")
     } else if (email[1] == 0) {
+      $('#delivery_scanner a').attr('href', '/trade-with-tredcode')
+      $('.delivery_scanner').attr("onclick", "location.href='/trade-with-tredcode'")
+      $('#fii_dii_data a').attr('href', '/trade-with-tredcode')
+      $('.fii_dii_data').attr("onclick", "location.href='/trade-with-tredcode'")
       $('#trading_journal a').attr('href', '/trade-with-tredcode')
       $('.trading_journal').attr("onclick", "location.href='/trade-with-tredcode'")
     }

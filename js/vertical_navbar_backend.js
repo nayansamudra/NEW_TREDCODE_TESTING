@@ -330,20 +330,20 @@ const create_navbar = () => {
         <span id="menu_item_6" class="tooltip">&nbsp;Money-Flux</span>
      </a>
   </li>
-  <li class="nav-item" id="scanner">
+  <li class="nav-item" id="delivery_scanner">
      <a class="nav-link" href="/delivery-scanner">
         <img src="/img/scanner.png">
-        <span id="menu_item_7" class="tooltip" style="line-break:auto">&nbsp;Delivery Scanners</span>
+        <span id="menu_item_7" class="tooltip">&nbsp;Delivery Scanners</span>
      </a>
   </li>
   <li class="nav-item" id="fii_dii_data">
      <a class="nav-link" href="/fii-dii-data">
         <img src="/img/fii_dii_data.png">
-        <span id="menu_item_8" class="tooltip" style="line-break:auto">&nbsp;FII / DII</span>
+        <span id="menu_item_8" class="tooltip">&nbsp;FII / DII</span>
      </a>
   </li>
   <li class="nav-item" id="trading_journal">
-     <a class="nav-link">
+     <a class="nav-link" href="/trading-journal">
         <img src="/img/trading_journal.png">
         <span id="menu_item_9" class="tooltip">&nbsp;Trading Journal</span>
      </a>

@@ -85,7 +85,7 @@ const VolumeBarColor = (point) => {
 
 // Highchart volume bar width and then Update chart
 const VolumeBarWidth = (points) => {
-    var volume_bar_width = parseInt(points * 24 / 1031.5) 
+    var volume_bar_width = parseInt(points * 24 / 1031.5)
 
     console.log(volume_bar_width)
 
@@ -128,7 +128,7 @@ const chart_data = () => {
     FII_net_array = []
     DII_net_array = []
 
-    if(FII_DII_data.length >= 40) { last_limit = 40 }
+    if (FII_DII_data.length >= 40) { last_limit = 40 }
     else { last_limit = FII_DII_data.length }
 
     for (var i = 0; i < last_limit; i++) {
@@ -274,184 +274,11 @@ $(document).ready(function () {
 
     xAxis = []
 
-    // let page_access = username(cookieValue_1)
-    // page_access = ['samudragupta201@gmail.com', 1, 0, 1, {p1: 1, p2: 1, p3: 1, p4: 1, idx: 1, sc: 1, fd: 1}]
-
-    // if (page_access[2] == 0) {
-    //     if (page_access[4]['fd'] == 1) {
-
     fetch_data()
 
     $("#fii_dii_datatable_ip").keyup(function () {
         $('#fii_dii_datatable').dataTable().fnFilter(this.value);
     });
-    //     } else if (page_access[4]['fd'] == 0) {
-    //         $('.blur-background').removeClass('d-none')
-    //         $('.lock-icon').removeClass('d-none')
-
-    //         $('.dataTableFD tbody').empty();
-
-    //         var jsonData;
-
-    //         fetch("json/table.json")
-    //             .then(response => response.json())
-    //             .then(data => {
-    //                 jsonData = data;
-    //                 populateTableBodies();
-    //             });
-
-    //         function populateTableBodies() {
-    //             var tableIds = ["fii_dii_datatable"];
-
-    //             var fii_dii_Data = jsonData.fii_dii_table;
-
-    //             for (var i = 0; i < fii_dii_Data.length; i++) {
-    //                 xAxis.push(fii_dii_Data[i][0])
-    //                 let ts = fii_dii_Data[i][0];
-    //                 let FII_Buy = fii_dii_Data[i][1];
-    //                 let FII_Sell = fii_dii_Data[i][2];
-    //                 let FII_Net = fii_dii_Data[i][3];
-    //                 let DII_Buy = fii_dii_Data[i][4];
-    //                 let DII_Sell = fii_dii_Data[i][5];
-    //                 let DII_Net = fii_dii_Data[i][6];
-    //                 fii_dii_Data[i][0] = moment.unix(ts).format('DD-MM-YYYY')
-    //                 fii_dii_Data[i][1] = FII_Buy
-    //                 fii_dii_Data[i][2] = FII_Sell
-    //                 fii_dii_Data[i][3] = FII_Net
-    //                 fii_dii_Data[i][4] = parseFloat(parseFloat(FII_Net) + parseFloat(DII_Net)).toFixed(2)
-    //                 fii_dii_Data[i][5] = DII_Net
-    //                 fii_dii_Data[i][6] = DII_Buy
-    //                 fii_dii_Data[i][7] = DII_Sell
-    //             }
-
-    //             tableIds.forEach(tableId => {
-
-    //                 if (fii_dii_Data) {
-    //                     datatable = $("#" + tableId).DataTable({
-    //                         "columnDefs": [{ targets: [0, 1, 2, 3, 5, 6, 7], className: 'dt-body-center' },
-    //                         { targets: [4], className: 'dt-body-center' }],
-    //                         "autoWidth": false,
-    //                         "rowCallback": function (row, data) {
-    //                             if (data[3] > 0) {
-    //                                 $('td:eq(3)', row).html('<span style=color:#00d3c0>' + data[3] + '</span>');
-    //                             }
-    //                             else {
-    //                                 $('td:eq(3)', row).html('<span style=color:#ff5253>' + data[3] + '</span>');
-    //                             }
-    //                             if (data[5] > 0) {
-    //                                 $('td:eq(5)', row).html('<span style=color:#00d3c0>' + data[5] + '</span>');
-    //                             }
-    //                             else {
-    //                                 $('td:eq(5)', row).html('<span style=color:#ff5253>' + data[5] + '</span>');
-    //                             }
-    //                             if (data[4] > 0) {
-    //                                 $('td:eq(4)', row).html('<span><div style=color:white;background-color:#308f86;border-radius:5px;>' + data[4] + '</div></span>');
-    //                             }
-    //                             else {
-    //                                 $('td:eq(4)', row).html('<span><div style=color:white;background-color:#ff5253;border-radius:5px;>' + data[4] + '</div></span>');
-    //                             }
-    //                         },
-    //                         paging: false,
-    //                         info: false,
-    //                         ordering: false,
-    //                         scrollX: true,
-    //                         pageLength: 50,
-    //                     });
-    //                     datatable.clear();
-    //                     datatable.rows.add(fii_dii_Data);
-    //                     datatable.draw();
-    //                 }
-    //             });
-
-    //             FII_DII_data = fii_dii_Data
-
-    //             chart_data()
-
-    //             $('.dataTables_scrollHeadInner').attr('style', 'box-sizing: content-box; padding-right: 0px;')
-    //         }
-    //     }
-    // } else if (page_access[2] == 0) {
-    //     $('.dataTableFD tbody').empty();
-
-    //     var jsonData;
-
-    //     fetch("json/table.json")
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             jsonData = data;
-    //             populateTableBodies();
-    //         });
-
-    //     function populateTableBodies() {
-    //         var tableIds = ["fii_dii_datatable"];
-
-    //         var fii_dii_Data = jsonData.fii_dii_table;
-
-    //         for (var i = 0; i < fii_dii_Data.length; i++) {
-    //             xAxis.push(fii_dii_Data[i][0])
-    //             let ts = fii_dii_Data[i][0];
-    //             let FII_Buy = fii_dii_Data[i][1];
-    //             let FII_Sell = fii_dii_Data[i][2];
-    //             let FII_Net = fii_dii_Data[i][3];
-    //             let DII_Buy = fii_dii_Data[i][4];
-    //             let DII_Sell = fii_dii_Data[i][5];
-    //             let DII_Net = fii_dii_Data[i][6];
-    //             fii_dii_Data[i][0] = moment.unix(ts).format('DD-MM-YYYY')
-    //             fii_dii_Data[i][1] = FII_Buy
-    //             fii_dii_Data[i][2] = FII_Sell
-    //             fii_dii_Data[i][3] = FII_Net
-    //             fii_dii_Data[i][4] = parseFloat(parseFloat(FII_Net) + parseFloat(DII_Net)).toFixed(2)
-    //             fii_dii_Data[i][5] = DII_Net
-    //             fii_dii_Data[i][6] = DII_Buy
-    //             fii_dii_Data[i][7] = DII_Sell
-    //         }
-
-    //         tableIds.forEach(tableId => {
-
-    //             if (fii_dii_Data) {
-    //                 datatable = $("#" + tableId).DataTable({
-    //                     "columnDefs": [{ targets: [0, 1, 2, 3, 5, 6, 7], className: 'dt-body-center' },
-    //                     { targets: [4], className: 'dt-body-center' }],
-    //                     "autoWidth": false,
-    //                     "rowCallback": function (row, data) {
-    //                         if (data[3] > 0) {
-    //                             $('td:eq(3)', row).html('<span style=color:#00d3c0>' + data[3] + '</span>');
-    //                         }
-    //                         else {
-    //                             $('td:eq(3)', row).html('<span style=color:#ff5253>' + data[3] + '</span>');
-    //                         }
-    //                         if (data[5] > 0) {
-    //                             $('td:eq(5)', row).html('<span style=color:#00d3c0>' + data[5] + '</span>');
-    //                         }
-    //                         else {
-    //                             $('td:eq(5)', row).html('<span style=color:#ff5253>' + data[5] + '</span>');
-    //                         }
-    //                         if (data[4] > 0) {
-    //                             $('td:eq(4)', row).html('<span><div style=color:white;background-color:#308f86;border-radius:5px;>' + data[4] + '</div></span>');
-    //                         }
-    //                         else {
-    //                             $('td:eq(4)', row).html('<span><div style=color:white;background-color:#ff5253;border-radius:5px;>' + data[4] + '</div></span>');
-    //                         }
-    //                     },
-    //                     paging: false,
-    //                     info: false,
-    //                     ordering: false,
-    //                     scrollX: true,
-    //                     pageLength: 50,
-    //                 });
-    //                 datatable.clear();
-    //                 datatable.rows.add(fii_dii_Data);
-    //                 datatable.draw();
-    //             }
-    //         });
-
-    //         FII_DII_data = fii_dii_Data
-
-    //         chart_data()
-
-    //         $('.dataTables_scrollHeadInner').attr('style', 'box-sizing: content-box; padding-right: 0px;')
-    //     }
-    // }
 })
 
 $(window).resize(function () {
