@@ -80,6 +80,8 @@ const VolumeBarColor = (point) => {
         return "#00d3c0";
     } else if (point < 0) {
         return "#ff5253"
+    }  else if (point == 0) {
+        return "#fff"
     }
 };
 
@@ -130,6 +132,24 @@ const chart_data = () => {
 
     if (FII_DII_data.length >= 40) { last_limit = 40 }
     else { last_limit = FII_DII_data.length }
+
+    FII_DII_net_array.push({
+        x: parseFloat((parseFloat(xAxis[0]) + 19800 - 86400) * 1000), // the date
+        y: 0, // the Volume
+        color: VolumeBarColor(0),
+    });
+
+    FII_net_array.push({
+        x: parseFloat((parseFloat(xAxis[0]) + 19800 - 86400) * 1000), // the date
+        y: 0, // the Volume
+        color: VolumeBarColor(0),
+    });
+
+    DII_net_array.push({
+        x: parseFloat((parseFloat(xAxis[0]) + 19800 - 86400) * 1000), // the date
+        y: 0, // the Volume
+        color: VolumeBarColor(0),
+    });
 
     for (var i = 0; i < last_limit; i++) {
         FII_DII_net_array.push({
@@ -286,4 +306,10 @@ $(window).resize(function () {
 
     chart_width = $('#fii_dii_chart').width()
     VolumeBarWidth(chart_width)
+
+    if($(window).width() >= 576) {
+        $('#add_br').html('Capital Market Activity (in Cr.) <a class="live live-2"><i class="fa-solid fa-circle fa-sm"></i>&nbsp;ACTIVE</a>')
+    } else if($(window).width() < 576){
+        $('#add_br').html('Capital Market Activity <br> (in Cr.) <a class="live live-2"><i class="fa-solid fa-circle fa-sm"></i>&nbsp;ACTIVE</a>')
+    }
 })

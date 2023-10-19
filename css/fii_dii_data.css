@@ -13,12 +13,6 @@ a.live {
   text-decoration: none;
   max-height: 17px;
 }
-@media (min-width: 630px) and (max-width: 720px) {
-  a.live-2 {
-    display: flex !important;
-    align-items: center;
-  }
-}
 @keyframes live-effect {
   from {
     opacity: 0.2;

@@ -370,9 +370,9 @@ const create_admin_navigation = () => {
   var str = `<div class="mt-1 container-fluid">
   <div class="mx-0 row d-flex justify-content-center align-item-center">
       <div class="d-flex" id="admin_navigation_div">
-          <div class="me-3 wrapper_2 col text-center px-0" onclick="location.href='/admin/users'">Users</div>
-          <div class="me-3 wrapper_2 col text-center px-0" onclick="location.href='/admin/signal'">Signal</div>
-          <div class="wrapper_2 col text-center px-0" onclick="location.href='/admin/feedback'">Feedback</div>
+          <div class="me-3 text-white wrapper_2 col text-center px-0" onclick="location.href='/admin/users'">Users</div>
+          <div class="me-3 text-white wrapper_2 col text-center px-0" onclick="location.href='/admin/signal'">Signal</div>
+          <div class="text-white wrapper_2 col text-center px-0" onclick="location.href='/admin/feedback'">Feedback</div>
       </div>
   </div></div>`
 
