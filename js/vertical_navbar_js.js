@@ -501,9 +501,9 @@ const create_navbar = () => {
      </a>
   </li>
   <li class="nav-item" id="scanner">
-     <a class="nav-link" href="/scanner">
+     <a class="nav-link" href="/delivery-scanner">
         <img src="img/scanner.png">
-        <span id="menu_item_7" class="tooltip" style="line-break:auto">&nbsp;Scanners</span>
+        <span id="menu_item_7" class="tooltip" style="line-break:auto">&nbsp;Delivery Scanners</span>
      </a>
   </li>
   <li class="nav-item" id="fii_dii_data">

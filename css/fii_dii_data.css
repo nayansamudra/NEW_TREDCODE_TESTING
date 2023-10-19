@@ -549,3 +549,10 @@ tbody {
   background-color: #878787;
   border-radius: 8px;
 }
+
+@media (max-width: 450px) {
+  .card-body.barchart-percentage-wrap.chart_container_7 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

@@ -119,6 +119,9 @@ const API_call = () => {
 }
 
 $(document).on('click', "input[type='radio']", function () {
+    // if (page_access[2] == 0) {
+    //     if (page_access[4]['sc'] == 1) {
+
     scan_value = $("input[name='market_option']:checked").val()
     segment_value = $("input[name='market_option_1']:checked").val()
     default_url = '/fetch' + scan_value + segment_value;
@@ -155,10 +158,18 @@ $(document).on('click', "input[type='radio']", function () {
         }
     }, 30);
 
+    //     }
+    // }
+
 })
 
 $(document).ready(function () {
 
+    // page_access = username(cookieValue_1)
+
+    // if (page_access[2] == 0) {
+    //     if (page_access[4]['sc'] == 1) {
+        
     counter_for_datatable = 0
     default_url = "/fetch_hd_data_fno"
     scan_value = "_hd_data_"
@@ -175,5 +186,110 @@ $(document).ready(function () {
     $("#scanner_datatable_ip").keyup(function () {
         $('#scanner_datatable').dataTable().fnFilter(this.value);
     });
+
+    //     } else if (page_access[4]['sc'] == 0) {
+
+    //         $('.blur-background').removeClass('d-none')
+    //         $('.lock-icon').removeClass('d-none')
+
+    //         $('.dataTableSc tbody').empty();
+
+    //         var jsonData;
+
+    //         fetch("json/table.json")
+    //             .then(response => response.json())
+    //             .then(data => {
+    //                 jsonData = data;
+    //                 populateTableBodies();
+    //             });
+
+    //         function populateTableBodies() {
+    //             var tableIds = ["scanner_datatable"];
+
+    //             var scannerData = jsonData.scanner_table;
+
+    //             $('#scanner_datatable').removeClass('dataTableSc dataTableSc_dsp').addClass('dataTableSc')
+    //             for (var i = 0; i < scannerData.length; i++) {
+    //                 // data pre preprocessing
+    //                 let Name = scannerData[i][0];
+    //                 let LTP = scannerData[i][1];
+    //                 let Volume = scannerData[i][2];
+    //                 let Delivery_percentage = scannerData[i][3];
+    //                 let ts = scannerData[i][4];
+    //                 let Avg_delivery_percentage = scannerData[i][5];
+    //                 scannerData[i][0] = Name
+    //                 scannerData[i][1] = LTP;
+    //                 scannerData[i][2] = Volume;
+    //                 scannerData[i][3] = parseFloat(Avg_delivery_percentage).toFixed(2);
+    //                 scannerData[i][4] = `${Delivery_percentage} <progress max=100 value=${Delivery_percentage}>`;
+    //             }
+
+    //             tableIds.forEach(tableId => {
+
+    //                 if (scannerData) {
+    //                     datatable = $("#" + tableId).DataTable({
+    //                         paging: false,
+    //                         pageLength: 50,
+    //                         info: false,
+    //                         scrollX: true,
+    //                         ordering: false
+    //                     });
+    //                     datatable.clear();
+    //                     datatable.rows.add(scannerData);
+    //                     datatable.draw();
+    //                 }
+    //             });
+    //         }
+    //     }
+    // } else if (page_access[2] == 0) {
+    //     $('.dataTableSc tbody').empty();
+
+    //     var jsonData;
+
+    //     fetch("json/table.json")
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             jsonData = data;
+    //             populateTableBodies();
+    //         });
+
+    //     function populateTableBodies() {
+    //         var tableIds = ["scanner_datatable"];
+
+    //         var scannerData = jsonData.scanner_table;
+
+    //         $('#scanner_datatable').removeClass('dataTableSc dataTableSc_dsp').addClass('dataTableSc')
+    //         for (var i = 0; i < scannerData.length; i++) {
+    //             // data pre preprocessing
+    //             let Name = scannerData[i][0];
+    //             let LTP = scannerData[i][1];
+    //             let Volume = scannerData[i][2];
+    //             let Delivery_percentage = scannerData[i][3];
+    //             let ts = scannerData[i][4];
+    //             let Avg_delivery_percentage = scannerData[i][5];
+    //             scannerData[i][0] = Name
+    //             scannerData[i][1] = LTP;
+    //             scannerData[i][2] = Volume;
+    //             scannerData[i][3] = parseFloat(Avg_delivery_percentage).toFixed(2);
+    //             scannerData[i][4] = `${Delivery_percentage} <progress max=100 value=${Delivery_percentage}>`;
+    //         }
+
+    //         tableIds.forEach(tableId => {
+
+    //             if (scannerData) {
+    //                 datatable = $("#" + tableId).DataTable({
+    //                     paging: false,
+    //                     pageLength: 50,
+    //                     info: false,
+    //                     scrollX: true,
+    //                     ordering: false
+    //                 });
+    //                 datatable.clear();
+    //                 datatable.rows.add(scannerData);
+    //                 datatable.draw();
+    //             }
+    //         });
+    //     }
+    // }
 
 })
