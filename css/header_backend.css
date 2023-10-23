@@ -810,3 +810,14 @@ tbody::-webkit-scrollbar-thumb {
     display: none !important;
   }
 }
+
+
+/*--------------------------
+Vertical Navbar New Design
+--------------------------*/
+
+#sidebar {
+  overflow-y: auto !important;
+  height: 100vh !important;
+  overflow-x: hidden !important;
+}

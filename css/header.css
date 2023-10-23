@@ -1224,6 +1224,13 @@ thead {
   background: #555;
 }
 
+nav::-webkit-scrollbar {
+  width: 0.5px;
+}
+nav::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the thumb to the same as the background */
+}
+
 .dataTables_scrollBody {
   overflow-x: hidden !important;
 }
@@ -1415,7 +1422,7 @@ thead th {
   --bs-btn-close-opacity: 1 !important;
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   #chat_image_modal .modal-footer {
     display: none !important;
   }
@@ -1424,7 +1431,7 @@ thead th {
   }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   #chat_image_modal .modal-footer {
     display: flex !important;
   }
@@ -1434,4 +1441,15 @@ thead th {
   #chat_image_modal .modal-header {
     display: none !important;
   }
+}
+
+
+/*--------------------------
+Vertical Navbar New Design
+--------------------------*/
+
+#sidebar {
+  overflow-y: auto !important;
+  height: 100vh !important;
+  overflow-x: hidden !important;
 }

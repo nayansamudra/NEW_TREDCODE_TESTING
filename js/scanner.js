@@ -1,4 +1,4 @@
-scanner_root = "https://students.tradingcafeindia.com"
+
 route = '/calcApi2'
 
 // -------------------------- Datatable ------------------------
@@ -48,6 +48,8 @@ const API_call = () => {
                     DS_data[i][2] = Volume;
                     DS_data[i][3] = parseFloat(Avg_delivery_percentage).toFixed(2);
                     DS_data[i][4] = `${Delivery_percentage} <progress max=100 value=${Delivery_percentage}>`;
+
+                    $('#updated_date').text(`${moment.unix(ts).format('ddd MMM DD, YYYY')} IST`)
                 }
             } else if (scan_value == '_dsp_data_') {
                 $('#scanner_datatable').removeClass('dataTableSc dataTableSc_dsp').addClass('dataTableSc_dsp')
@@ -64,6 +66,8 @@ const API_call = () => {
                     DS_data[i][2] = parseFloat(Avg_delivery_percentage).toFixed(2);
                     DS_data[i][3] = `${Delivery_percentage} <progress max=100 value=${Delivery_percentage}>`;
                     DS_data[i][4] = Increase_in_Delivery;
+
+                    $('#updated_date').text(`${moment.unix(ts).format('ddd MMM DD, YYYY')} IST`)
                 }
             }
 

@@ -1,4 +1,4 @@
-scanner_root = "https://students.tradingcafeindia.com"
+
 route = '/calcApi'
 
 // -------------------------- Datatable ------------------------
