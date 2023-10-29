@@ -333,6 +333,11 @@ const tw_charts = (symbol) => {
     $('#notification').fadeIn('slow').delay(2000).fadeOut('slow');
     return;
   }
+  
+  if(email[3] == 1) {
+    return
+  }
+  
   setCookie('script', symbol, 1)
   $.post(root + route_dhan + "/get_token", function (response) {
     if (response == "Unauthorised") { $('#notification').fadeIn('slow').delay(2000).fadeOut('slow'); return }

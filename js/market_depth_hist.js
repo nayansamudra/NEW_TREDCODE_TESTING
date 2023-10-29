@@ -6,7 +6,6 @@ route = '/study-data'
 //         response = response.split(":");
 //         $('.dtime').html(response[0] + ':' + (response[1]));
 //     });
-
 // }
 
 
