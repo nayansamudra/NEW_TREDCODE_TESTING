@@ -194,26 +194,12 @@
                      </div>
                   </div>
                </div>
-               <div class="row d-flex justify-content-center">
-                  <div class="bg-color col-md-12 col-md col-lg m-2 rounded text-white"
-                     style="padding: 1.5rem !important; font-weight: 600;">
-                     <h2>Disclaimer:</h2>
-                     <ul id="disclaimer">
-                        <li class="mb-2">We are not SEBI registered. We don’t provide tips or calls in any format.</li>
-                        <li class="mb-2">Tredcode’s sole aim is to give you market insights and help you make informed
-                           decisions in
-                           your trading.</li>
-                        <li class="mb-2">We don’t take funds from clients , nor do we handle any outside funds.</li>
-                        <li class="mb-2">The data in Tredcode is delayed by sometime to process it and to follow the
-                           guidelines by
-                           exchanges.</li>
-                        <li class="mb-2">All information shared here is for educational purposes only.</li>
-                        <li class="mb-2">If anyone approaches you for tips, calls, profit sharing , kindly report us. We
-                           are not
-                           responsible for any losses made in any form.</li>
-                     </ul>
-                  </div>
+
+               <div class="p-2 h-100 mx-3 px-0 text-light button_height">
+                  <button class="go_btn bg-color text-white font-weight-bold px-4 py-2 rounded"
+                     type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Disclaimer</button>
                </div>
+
             </div>
 
             <div class="chat_slide_wrapper">
@@ -265,6 +251,44 @@
       </div>
    </footer>
 
+   <!-- Modal - (Image Modal) -->
+   <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content bg-color border-0">
+            <div class="modal-header">
+               <h5 class="modal-title text-white">Disclaimer: </h5>
+               <button type="button" class="btn-close bg-white close_modal" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-faint p-0" style="max-height: 80vh !important; overflow-y: auto;">
+               <div class="row d-flex justify-content-center">
+                  <div class="bg-color col-md-12 col-md col-lg m-2 rounded text-white"
+                     style="font-weight: 600;">
+                     <ul id="disclaimer">
+                        <li class="mb-2">We are not SEBI registered. We don’t provide tips or calls in any format.</li>
+                        <li class="mb-2">Tredcode’s sole aim is to give you market insights and help you make informed
+                           decisions in
+                           your trading.</li>
+                        <li class="mb-2">We don’t take funds from clients , nor do we handle any outside funds.</li>
+                        <li class="mb-2">The data in Tredcode is delayed by sometime to process it and to follow the
+                           guidelines by
+                           exchanges.</li>
+                        <li class="mb-2">All information shared here is for educational purposes only.</li>
+                        <li class="mb-2">If anyone approaches you for tips, calls, profit sharing , kindly report us. We
+                           are not
+                           responsible for any losses made in any form.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary bg-faint close_modal"
+                  data-bs-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <!-- Google tag (gtag.js) -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCHQ1VC2VL"></script>
    <script>
@@ -301,6 +325,16 @@
    <!-- Manual Jquery -->
    <script src="js/gg.min.js"></script>
    <script src="js/vertical_navbar_js.js"></script>
+
+   <script>
+      $(document).ready(function () {
+         let page_access = username(cookieValue_1)
+         if (page_access[4]['p1'] == 0 && page_access[4]['p2'] == 0 && page_access[4]['p3'] == 0 && page_access[4]['p4'] == 0 && page_access[4]['idx'] == 0 && page_access[4]['mf'] == 0) {
+            $('.fixed_updates_window').remove()
+            $('.fixed_updates_btn').remove()
+         }
+      })
+   </script>
 
 </body>
 

@@ -227,10 +227,7 @@ const calculation_for_Exp_1 = (vol_data, Bar_data) => {
     len_1 = vol_data.length;
     for (var i = 0; i < len_1; i++) {
       for (var j = 0; j < vol_data[0].length; j++) {
-        if (
-          i != len_1 - 1 &&
-          parseFloat(vol_data[i][0]) == parseFloat(vol_data[i + 1][0])
-        ) {
+        if (i != len_1 - 1 && parseFloat(vol_data[i][0]) == parseFloat(vol_data[i + 1][0])) {
           i = i + 1;
         }
         Array_2.push(parseFloat(vol_data[i][j]));

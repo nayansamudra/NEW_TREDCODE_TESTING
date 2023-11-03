@@ -334,7 +334,13 @@ const tw_charts = (symbol) => {
     return;
   }
   
+  // if td_full = 1 - NO CHART ACCESS 
   if(email[3] == 1) {
+    return
+  }
+
+  // if only_dhan = 1 - NO CHART ACCESS 
+  if(email[2] == 1) {
     return
   }
   

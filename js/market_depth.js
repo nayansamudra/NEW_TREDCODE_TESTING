@@ -103,6 +103,7 @@ options7 = {
                 // Bar_name = Bar_name.replace("-", "_")
                 // Bar_name = Bar_name.replace("&", "_")
                 logger.info(Bar_name)
+                
                 tw_charts(Bar_name)
             }
         }
