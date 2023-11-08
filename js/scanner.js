@@ -123,8 +123,6 @@ const API_call = () => {
 }
 
 $(document).on('click', "input[type='radio']", function () {
-    // if (page_access[2] == 0) {
-    //     if (page_access[4]['sc'] == 1) {
 
     scan_value = $("input[name='market_option']:checked").val()
     segment_value = $("input[name='market_option_1']:checked").val()
@@ -161,9 +159,6 @@ $(document).on('click', "input[type='radio']", function () {
             $('#5th_col_heading').removeAttr("style")
         }
     }, 30);
-
-    //     }
-    // }
 
 })
 

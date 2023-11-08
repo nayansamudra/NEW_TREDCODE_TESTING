@@ -1261,14 +1261,6 @@ const winner_losser = () => {
         // Convert 'returnAmount' to a number
         const numericReturn = parseFloat(returnAmount[1]);
         symbolReturn.push([symbol, numericReturn])
-
-        // // If the symbol already exists in the dictionary, add to its return
-        // if (symbolReturns.hasOwnProperty(symbol)) {
-        //     symbolReturns[symbol] += numericReturn;
-        // } else {
-        //     // If the symbol doesn't exist, initialize its return
-        //     symbolReturns[symbol] = numericReturn;
-        // }
     }
 
     symbolReturn.sort(function (a, b) {
@@ -1286,17 +1278,6 @@ const winner_losser = () => {
         Losser_2: top3Min[1],
         Losser_1: top3Min[2]
     };
-
-    // const sortedSymbols = Object.keys(symbolReturns).sort((a, b) => symbolReturns[b] - symbolReturns[a]);
-
-    // const Winner_losser_Dict = {
-    //     Winner_1: [sortedSymbols[0], symbolReturns[sortedSymbols[0]]],
-    //     Winner_2: [sortedSymbols[1], symbolReturns[sortedSymbols[1]]],
-    //     Winner_3: [sortedSymbols[2], symbolReturns[sortedSymbols[2]]],
-    //     Losser_1: [sortedSymbols[sortedSymbols.length - 1], symbolReturns[sortedSymbols[sortedSymbols.length - 1]]],
-    //     Losser_2: [sortedSymbols[sortedSymbols.length - 2], symbolReturns[sortedSymbols[sortedSymbols.length - 2]]],
-    //     Losser_3: [sortedSymbols[sortedSymbols.length - 3], symbolReturns[sortedSymbols[sortedSymbols.length - 3]]]
-    // };
 
     const winnersHaveNegativeReturn = Object.values(Winner_losser_Dict)
         .slice(0, 3)
