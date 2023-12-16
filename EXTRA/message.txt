@@ -1,0 +1,302 @@
+[
+    [
+        "1699526429.84715",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/48AX9SRDHAHC.png",
+        ""
+    ],
+    [
+        "1699526425.31685",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/7U4E761WR5EN.png",
+        ""
+    ],
+    [
+        "1699526420.89512",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/FFS1L9NNTEAN.png",
+        "<p>Today's Trades - PFC, AUBANK &amp; GODREJPROP</p>"
+    ],
+    [
+        "1699523134.83775",
+        "",
+        "<p>yesterdays BN fly case study is showing market around 43700 zone only so ideal thing is coming close 200 points from each side to reduce losses from both the sides&nbsp;</p>"
+    ],
+    [
+        "1699436854.92222",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/WJE3PLY9MRMI.png",
+        ""
+    ],
+    [
+        "1699436691.44746",
+        "",
+        "<p>guys lets understand this case study of iron fly using bn as base index, at moment market is near 43700 so making straddle at 43700 and hedging it can create on e fly here&nbsp;</p>"
+    ],
+    [
+        "1699353829.63726",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/MNAA1Y2YP2SA.png",
+        ""
+    ],
+    [
+        "1699353823.75946",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/C1ND240Y9ZJ6.png",
+        "<p>Today's Trades - SUNPHARMA &amp; KOTAK BANK</p>"
+    ],
+    [
+        "1699343773.38767",
+        "",
+        "<p>Any quest related to volume profile or poc will be addressed in sessions purely for TCI students, we will not address them on live stream so do not worry traders</p>"
+    ],
+    [
+        "1699267054.90781",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/3NEUX5ESIE93.png",
+        ""
+    ],
+    [
+        "1699267050.29715",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/837MOBTJ7L2N.png",
+        "<p>Today's Trades - EICHERMOTOR &amp; AARTIIND</p>"
+    ],
+    [
+        "1699009196.83205",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/D8BZ764A25EE.png",
+        ""
+    ],
+    [
+        "1699009192.27452",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/4O63WQJBUHXU.png",
+        ""
+    ],
+    [
+        "1699009187.65843",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/Y023OI7V3BZ5.png",
+        "<p>Today's Trades - UPL, SHRIRAMFIN &amp; APOLLOHOSP</p>"
+    ],
+    [
+        "1699005258.41966",
+        "",
+        "<p>in NIFTY fly case study roll up PE 100 is ideal thing as market sustained 100 points up</p>"
+    ],
+    [
+        "1698920444.40882",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/CTQT0PNA7HEB.png",
+        "<p>Today's Trades - INDUSINDBK</p>"
+    ],
+    [
+        "1698919142.27391",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/K39EKD9TIQ4H.png",
+        "<p>this is study case for entire week going ahead</p>"
+    ],
+    [
+        "1698919076.03891",
+        "",
+        "<p>nifty case study fly can be made with keeping 19150 straddle in place</p><p>&nbsp;</p>"
+    ],
+    [
+        "1698917420.80901",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/22TCUJWA5BUJ.png",
+        ""
+    ],
+    [
+        "1698917414.33451",
+        "",
+        "<p>as explained on live stream did some changes in our bn fly case study to make it fully risk free with rolling down CE</p>"
+    ],
+    [
+        "1698908336.5984",
+        "",
+        "<p><a href=\"https://youtube.com/live/TvjGbcVbM8o \">https://youtube.com/live/TvjGbcVbM8o&nbsp;</a></p><p>&nbsp;</p><p>Hello traders, Chinmay here, Im starting Live stream for students only, sharing link to join, will start in 5 min lets understand fly adjustments in ENGLISH</p>"
+    ],
+    [
+        "1698906399.52498",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/BI4UEQUCAJOZ.png",
+        ""
+    ],
+    [
+        "1698906237.60995",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/6E5FP5W2H1Q9.png",
+        "<p>when fly turns positive for making it risk free rolling CE will be ideal thing</p>"
+    ],
+    [
+        "1698898977.03823",
+        "",
+        "<p>now if sustains above days high, intraday long debit spread can be taken with intraday swing low as a sl</p>"
+    ],
+    [
+        "1698898908.04475",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/AV88DB53NHK9.png",
+        "<p>with this down side of this fly is totally risk free</p>"
+    ],
+    [
+        "1698898773.49006",
+        "",
+        "<p>first now as market in one way moved up almost 500 points, ideal thing to do is, roll up PE 500 points&nbsp;</p>"
+    ],
+    [
+        "1698898704.78869",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/FM1XO0G6K455.png",
+        "<p>if yesterday after 3pm one would have made fly this must be the current scenario, keeping 42700 as sell straddle in fly. now lets understand what adjustments needs to be done in this case study</p>"
+    ],
+    [
+        "1698835088.81123",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/FSXJUKV8NL0E.png",
+        "<p>Today's Trade - BPCL</p>"
+    ],
+    [
+        "1698832742.20411",
+        "",
+        "<p>Thank you all.<br>Will do another stream tomorrow.<br><br>Will update in morning&nbsp;</p>"
+    ],
+    [
+        "1698831011.22091",
+        "",
+        "<p>This is in hindi<br>will do english stream tomorrow&nbsp;</p><p>&nbsp;</p>"
+    ],
+    [
+        "1698829694.93425",
+        "",
+        "<p><a href=\"https://youtube.com/live/9HNv5Y2FlZc\">https://youtube.com/live/9HNv5Y2FlZc</a></p><p><br>Chinmay sir is live on youtube</p><p>We are just testing<br>any feedback from you all is highly appreciated</p>"
+    ],
+    [
+        "1698750480.45807",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/79OZ00L7N85E.png",
+        ""
+    ],
+    [
+        "1698750474.97295",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/WJTC7KIRFJLM.png",
+        "<p>Today's Trades - SUNPHARMA &amp; ONGC</p>"
+    ],
+    [
+        "1698744995.49369",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/IM9ZTI0D2HSV.png",
+        "<p>we are seeing some small profits here in this case study fly, now those who wants to carry this fly for next day, should bring bought CE further down, gained profits can be locked&nbsp;</p>"
+    ],
+    [
+        "1698742947.47687",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/3JQHYZR430EV.png",
+        "<p>there was no chance to trade in PIDILITE overnight but see how beautifully it respected volume profile with current accumulation and previous distribution&nbsp;</p>"
+    ],
+    [
+        "1698660064.40938",
+        "",
+        "<p>today I have roll down 300 points near 42600 CE after BN morning 400 point down move, and when Bn on spot broke yesterdays high added one long debit spread of 42800ce long and short 43100 ce which I closed now as it was for only intraday</p>"
+    ],
+    [
+        "1698659883.71938",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/GHUH8OYZ60E0.png",
+        ""
+    ],
+    [
+        "1698659706.00503",
+        "",
+        "<p>closing intraday long debit spread here as in this case study we don't keep any debit spreads positionally&nbsp;</p>"
+    ],
+    [
+        "1698648421.57453",
+        "",
+        "<p>start using volume profile regularly to get idea about serious money engagement on key levels</p>"
+    ],
+    [
+        "1698648376.10453",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/1R6IIW25SRTM.jpeg",
+        ""
+    ],
+    [
+        "1698648200.06098",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/WW1A4YSK8LAG.jpeg",
+        ""
+    ],
+    [
+        "1698648004.80722",
+        "",
+        "<p>when you think right time to short BN just take confirmation using price action and volumes you will clearly see, there was no good RR present after shorting bn here</p>"
+    ],
+    [
+        "1698647919.13137",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/UI04M74W63SS.jpeg",
+        ""
+    ],
+    [
+        "1698647593.27216",
+        "",
+        "<p>in such reversal days if we roll down CE our fly becomes much safer, and now as market is near upside breakeven, here to protect up side move, ideally we should add one long debit spread</p><p>&nbsp;</p>"
+    ],
+    [
+        "1698638292.6065",
+        "",
+        "<p>fly is now slightly in profit, in this case study I will bring down buy calls if market slips further down for securing up side as well</p>"
+    ],
+    [
+        "1698404641.45731",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/5G3V1K1XRF2W.png",
+        ""
+    ],
+    [
+        "1698404637.44875",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/TKXJS5IL2MRJ.png",
+        ""
+    ],
+    [
+        "1698404632.97799",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/NE3B71BJD75Z.png",
+        "<p>Today's Trades - BAJAJ_AUTO, RELIANCE &amp; SBIN</p>"
+    ],
+    [
+        "1698391421.83877",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/ZY27HDMW2W4E.jpeg",
+        ""
+    ],
+    [
+        "1698391283.97175",
+        "",
+        "<p>Now as the market is sustaining up side, we protected down side with rolling up PE now if market stays in this range no need to do any further changes, only if market stays above days high to reduce losses on upside need to add one long debit spread.</p>"
+    ],
+    [
+        "1698381068.05647",
+        "",
+        "<p>As the market moved up, in our weekly fly case study, I'm rolling up PE at 41900 and will book 41500 PE</p>"
+    ],
+    [
+        "1698315670.2877",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/MA5FWPCD0GGR.png",
+        "<p>Today's Trade - NIFTY</p>"
+    ],
+    [
+        "1698313710.81901",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/TN88JLCPGCIO.png",
+        "<p>track this cases tudy of fly for this week to understand adjustments&nbsp;</p>"
+    ],
+    [
+        "1698312234.85635",
+        "",
+        "<p>now guys for weekly case study lets see how to make Iron Fly&nbsp;<br>again guys this is strictly for learning purpose, one should first master the skill of adjustments before getting into real trades<br>at 3pm I will see where BankNifty spot is accordingly will make case study&nbsp;</p>"
+    ],
+    [
+        "1698300892.37908",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/CXNK8WYHHUG4.png",
+        "<p>this is once market touches near 42000 zone or if on 5 min market shows reversal sign.&nbsp;<br>this case study tells us if market goes in our direction how we can maximise our profits&nbsp;</p>"
+    ],
+    [
+        "1698300713.91367",
+        "",
+        "<p>now if you see markets reaching near 42000, fly will have some profits there<br>now case study 2&nbsp;<br>if markets stays there fly will make decent gains<br>if any bounce happens one can make long debit spread at least 300 points away like&nbsp;<br>long 42300 and short 42400&nbsp;<br>so one can now have decent gains near 42000 zone if market stays there, and if bounce comes in second half long debit spread can produce 1:5 to 1:7 RR</p>"
+    ],
+    [
+        "1698298462.26725",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/IR4BL8HXZPSM.png",
+        "<p>this is how it looks&nbsp;</p>"
+    ],
+    [
+        "1698298375.12557",
+        "",
+        "<p>traders as explained in yesterdays session about intraday fly, lets understand one case study, if I think Bank nifty have more space to go down, say till 42000, here for intraday I can make fly with selling 42000 straddle and hedge them with next strikes</p>"
+    ],
+    [
+        "1698230929.02356",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/9GK4U562IJYG.png",
+        ""
+    ],
+    [
+        "1698230924.82657",
+        "https://trjournal-test.s3.amazonaws.com/Messenger/TFCNIDIRC6Y9.png",
+        ""
+    ]
+]

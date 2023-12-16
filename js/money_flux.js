@@ -1409,13 +1409,13 @@ $(document).ready(function () {
             colorScale: {
               ranges: [
                 {
-                  from: -6,
+                  from: -25,
                   to: 0,
                   color: "#ff6c6c",
                 },
                 {
                   from: 0.001,
-                  to: 6,
+                  to: 25,
                   color: "#42b142",
                 },
               ],
@@ -2882,13 +2882,13 @@ $(document).ready(function () {
               colorScale: {
                 ranges: [
                   {
-                    from: -6,
+                    from: -25,
                     to: 0,
                     color: "#ff6c6c",
                   },
                   {
                     from: 0.001,
-                    to: 6,
+                    to: 25,
                     color: "#42b142",
                   },
                 ],
@@ -3093,13 +3093,13 @@ $(document).ready(function () {
             colorScale: {
               ranges: [
                 {
-                  from: -6,
+                  from: -25,
                   to: 0,
                   color: "#ff6c6c",
                 },
                 {
                   from: 0.001,
-                  to: 6,
+                  to: 25,
                   color: "#42b142",
                 },
               ],

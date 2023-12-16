@@ -10,6 +10,166 @@ route_3 = "/study-symbol"       // DATA TABLE
 //     });
 // }
 
+var options1 = {
+    chart: { type: 'donut', height: '400' },
+    series: [90, 40],
+    labels: ['Advanced', 'Decline'],
+    backgroundColor: 'transparent',
+    pieHole: 0.5,
+    colors: ['#00d3c0', '#ff5253'],
+    pieSliceTextStyle: { color: '#ffffff' },
+    sliceVisibilityThreshold: 0,
+    fontSize: 17,
+    chartArea: { top: 40, },
+    pieSliceTextStyle: { fontSize: 12 },
+    pieStartAngle: 50,
+    isStacked: true,
+    enableInteractivity: false,
+    pieSliceBorderColor: 'transparent',
+    legend: {
+        position: 'bottom', alignment: 'end',
+        labels: { colors: '#ffffff', useSeriesColors: false },
+        itemMargin: { horizontal: 10, vertical: 20 },
+        fontSize: 15,
+        markers: { width: 12, height: 12, radius: 12, },
+    },
+    stroke: { colors: 'trasparant', width: 0, },
+    plotOptions: {
+        pie: {
+            startAngle: 0,
+            endAngle: 360,
+            expandOnClick: true,
+            offsetX: 0,
+            offsetY: 50,
+            customScale: 1.1,
+            dataLabels: {
+                offset: 0,
+                minAngleToShowLabel: 50,
+            },
+
+            grid: { borderColor: "#000000" },
+
+            donut: {
+                size: '55%',
+                labels: {
+                    colors: '#ffffff', show: true,
+                    name: { color: '#ffffff', fontSize: 14, },
+                    value: { color: '#ffffff', fontSize: 14, },
+                    //total: {color: '#ffffff',},
+                },
+
+            },
+
+        }
+    }
+}
+
+const randomize = (dataSet) => {
+    i = 0;
+    return chart1.w.globals.series.map(function () {
+
+        return dataSet[i++];
+    })
+}
+chart1 = new ApexCharts(document.querySelector("#donutchart"), options1);
+chart1.render();
+
+const getpieDount = () => {
+    dataSet = [];
+    $.ajax({
+        url: root_1 + route_1 + '/Nifty 50 ADVANCE DECLINE',
+        method: 'GET',
+        dataType: 'json',
+        success: function (response) {
+            var i = 0;
+            var dataSet = [];
+
+            $.each(response.data, function (key, value) {
+                dataSet[0] = Math.floor(value.param_0);
+                dataSet[1] = Math.floor(value.param_1);
+            });
+
+            chart1.updateSeries(randomize(dataSet));
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            logger.error(textStatus + ': ' + errorThrown);
+        }
+    });
+
+}
+
+var options2 = {
+    chart: {
+        type: 'donut'
+    },
+    series: [30, 90],
+    labels: ['Advanced', 'Decline'],
+    backgroundColor: 'transparent',
+    pieHole: 0.5,
+    colors: ['#00d3c0', '#ff5253'],
+    pieSliceTextStyle: { color: '#ffffff' },
+    sliceVisibilityThreshold: 0,
+    fontSize: 17,
+    chartArea: { top: 50, },
+    pieSliceTextStyle: { fontSize: 12 },
+    pieStartAngle: -50,
+    isStacked: true,
+    enableInteractivity: true,
+    pieSliceBorderColor: "transparent",
+    legend: {
+        position: 'bottom', alignment: 'end',
+        labels: {
+            colors: '#ffffff',
+            useSeriesColors: false
+        },
+    },
+    plotOptions: {
+        pie: {
+            donut: {
+                labels: {
+                    show: true,
+
+                }
+            }
+
+        }
+    }
+}
+
+const randomize1 = (dataSet) => {
+    i = 0;
+    return chart2.w.globals.series.map(function () {
+
+        return dataSet[i++];
+    })
+}
+var chart2 = new ApexCharts(document.querySelector("#donutchart1"), options1);
+chart2.render();
+
+const getpieDount1 = () => {
+    dataSet = [];
+
+    $.ajax({
+        url: root_1 + route_1 + '/FO ADVANCE DECLINE',
+        method: 'GET',
+        dataType: 'json',
+        success: function (response) {
+            var i = 0;
+
+            $.each(response.data, function (key, value) {
+                dataSet[0] = Math.floor(value.param_0);
+                dataSet[1] = Math.floor(value.param_1);
+
+            });
+            chart2.updateSeries(randomize(dataSet))
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            logger.error(textStatus + ': ' + errorThrown);
+        }
+    });
+
+    ///
+}
 
 // semichart.js
 
@@ -290,6 +450,8 @@ $(document).ready(function () {
 
             check_access();
 
+            getpieDount();
+            getpieDount1();
             getpieDount3();
             getpieDount4();
 
@@ -541,6 +703,12 @@ $(document).ready(function () {
             $("#fiftydaylowbo_ip").keyup(function () {
                 $('#fiftydaylowbo').dataTable().fnFilter(this.value);
             });
+
+            setInterval(function () {
+                if (dtime_clock() == false) { return }
+                getpieDount();
+                getpieDount1();
+            }, 53000);
 
             setInterval(function () {
                 if (dtime_clock() == false) { return }

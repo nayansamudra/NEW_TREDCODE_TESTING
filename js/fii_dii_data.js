@@ -134,20 +134,20 @@ const chart_data = () => {
     else { last_limit = FII_DII_data.length }
 
     FII_DII_net_array.push({
-        x: parseFloat((parseFloat(xAxis[0]) + 19800 - 86400) * 1000), // the date
-        y: 0, // the Volume
+        x: parseFloat((parseFloat(xAxis[1]) + 19800) * 1000), // the date
+        y: parseFloat(FII_DII_data[1][4]), // the Volume
         color: VolumeBarColor(0),
     });
 
     FII_net_array.push({
-        x: parseFloat((parseFloat(xAxis[0]) + 19800 - 86400) * 1000), // the date
-        y: 0, // the Volume
+        x: parseFloat((parseFloat(xAxis[1]) + 19800) * 1000), // the date
+        y: parseFloat(FII_DII_data[1][3]), // the Volume
         color: VolumeBarColor(0),
     });
 
     DII_net_array.push({
-        x: parseFloat((parseFloat(xAxis[0]) + 19800 - 86400) * 1000), // the date
-        y: 0, // the Volume
+        x: parseFloat((parseFloat(xAxis[1]) + 19800) * 1000), // the date
+        y: parseFloat(FII_DII_data[1][5]), // the Volume
         color: VolumeBarColor(0),
     });
 

@@ -172,7 +172,11 @@
                         </thead>
                         <tbody id="scanner_datatable_tbody"></tbody>
                      </table>
-                     <div class="mt-3 d-flex justify-content-end" id="updated_date"></div>
+                     <div class="d-flex justify-content-between">
+                        <div class="mt-3 strategy_video">Strategy Video 👉 <a
+                              href="https://www.youtube.com/watch?v=93teE7dd-bY">click here</a></div>
+                        <div class="mt-3" id="updated_date"></div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -287,6 +291,22 @@
    <script src="js/gg.min.js"></script>
    <script src="js/vertical_navbar_js.js"></script>
    <script src="js/scanner.js"></script>
+
+   <script>
+      if ($(window).width() < 430) {
+         $('.strategy_video').html('Strategy Video <br> 👉 <a href="https://www.youtube.com/watch?v=93teE7dd-bY">click here</a>')
+      } else if ($(window).width() >= 430) {
+         $('.strategy_video').html('Strategy Video 👉 <a href="https://www.youtube.com/watch?v=93teE7dd-bY">click here</a>')
+      }
+
+      $(window).on("resize", function () {
+         if ($(window).width() < 430) {
+            $('.strategy_video').html('Strategy Video <br> 👉 <a href="https://www.youtube.com/watch?v=93teE7dd-bY">click here</a>')
+         } else if ($(window).width() >= 430) {
+            $('.strategy_video').html('Strategy Video 👉 <a href="https://www.youtube.com/watch?v=93teE7dd-bY">click here</a>')
+         }
+      })
+   </script>
 </body>
 
 </html>
