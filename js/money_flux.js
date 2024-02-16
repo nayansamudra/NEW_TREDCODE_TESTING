@@ -53,14 +53,14 @@ const call_Expiry_API = (script) => {
         "arrow-G5piCoZi arrowNeutral-G5piCoZi arrowShudderNeutral-G5piCoZi"
       );
     });
-    var x = moment.unix(Expiry_data[0][0]).format("MMM-D");
-    var y = moment.unix(Expiry_data[1][0]).format("MMM-D");
+    var x = moment.unix(Expiry_data[0][0]).utcOffset('+5:30').format("MMM-D");
+    var y = moment.unix(Expiry_data[1][0]).utcOffset('+5:30').format("MMM-D");
     $("#1st_dropdown_value").attr("value", x);
     $("#2nd_dropdown_value").attr("value", y);
     $("#1st_dropdown_value").text(x + " " + Expiry_data[0][1]);
     $("#2nd_dropdown_value").text(y + " " + Expiry_data[1][1]);
-    Nifty_exp_1 = moment.unix(Expiry_data[0][0]).format("DDMMM");
-    Nifty_exp_2 = moment.unix(Expiry_data[1][0]).format("DDMMM");
+    Nifty_exp_1 = moment.unix(Expiry_data[0][0]).utcOffset('+5:30').format("DDMMM");
+    Nifty_exp_2 = moment.unix(Expiry_data[1][0]).utcOffset('+5:30').format("DDMMM");
     return [Expiry_data, Nifty_exp_1, Nifty_exp_2];
   } catch (error) {
     logger.error(error);

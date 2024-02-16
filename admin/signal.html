@@ -100,6 +100,19 @@
                     </div>
                 </div>
 
+                <div class="mt-1 container-fluid d-none">
+                    <div class="mx-0 row d-flex justify-content-center align-item-center">
+                        <div class="d-flex" id="admin_navigation_div">
+                            <div class="me-3 text-white wrapper_2 col text-center px-0"
+                                onclick="location.href='/admin/users'">Users</div>
+                            <div class="me-3 text-white wrapper_2 col text-center px-0"
+                                onclick="location.href='/admin/signal'">Signal</div>
+                            <div class="text-white wrapper_2 col text-center px-0"
+                                onclick="location.href='/admin/feedback'">Feedback</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="notification"></div>
 
                 <div class="container-fluid">
@@ -137,7 +150,8 @@
                             </div>
                             <div class="Image">
                                 <h2 class="required-field">Select Image</h2>
-                                <input type="file" spellcheck="false" name="filename" id="Image_input" accept=".jpg, .png, .jpeg, .svg, .webp, .JPG, .PNG, .JPEG, .SVG, .WEBP, .mp4, .webm, .mkv">
+                                <input type="file" spellcheck="false" name="filename" id="Image_input"
+                                    accept=".jpg, .png, .jpeg, .svg, .webp, .JPG, .PNG, .JPEG, .SVG, .WEBP, .mp4, .webm, .mkv">
                             </div>
                             <div class="text-center mt-3 Submit_Button">
                                 <button id="submit">Submit</button>

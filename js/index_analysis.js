@@ -33,14 +33,14 @@ const call_Expiry_API = (script) => {
         }).fail(function (response) {
             logger.error('Error: ' + response);
         });
-        let x = moment.unix(Expiry_data[0][0]).format("MMM-DD");
-        let y = moment.unix(Expiry_data[1][0]).format("MMM-DD");
+        let x = moment.unix(Expiry_data[0][0]).utcOffset('+5:30').format("MMM-DD");
+        let y = moment.unix(Expiry_data[1][0]).utcOffset('+5:30').format("MMM-DD");
         $("#1st_dropdown_value").attr("value", x);
         $("#2nd_dropdown_value").attr("value", y);
         $("#1st_dropdown_value").text(x);
         $("#2nd_dropdown_value").text(y);
-        Nifty_exp_1 = moment.unix(Expiry_data[0][0]).format("DDMMMYY");
-        Nifty_exp_2 = moment.unix(Expiry_data[1][0]).format("DDMMMYY");
+        Nifty_exp_1 = moment.unix(Expiry_data[0][0]).utcOffset('+5:30').format("DDMMMYY");
+        Nifty_exp_2 = moment.unix(Expiry_data[1][0]).utcOffset('+5:30').format("DDMMMYY");
         return [Expiry_data, Nifty_exp_1, Nifty_exp_2];
     } catch (error) {
         logger.error(error)
@@ -68,11 +68,11 @@ const call_LIVE_OI_API = (script, exp) => {
 const timestamp_1 = () => {
     ts2 = Object.keys(Live_OI_data)[0]
 
-    year = moment.unix(parseFloat(ts2)).year()
-    month = moment.unix(parseFloat(ts2)).month()
-    day = moment.unix(parseFloat(ts2)).date()
+    year = moment.unix(parseFloat(ts2)).utcOffset('+5:30').year()
+    month = moment.unix(parseFloat(ts2)).utcOffset('+5:30').month()
+    day = moment.unix(parseFloat(ts2)).utcOffset('+5:30').date()
 
-    const dateTime = moment();
+    const dateTime = moment().utcOffset('+5:30');
     dateTime.set({ year: year, month: month, date: day, hour: 9, minute: 15, second: 0, millisecond: 0 });
     ts1 = dateTime.unix();
     ts1 = parseFloat(ts1).toFixed(1)
